@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 23.625" name="DataClasses1">
+  <DataContextMoniker Name="/DataClassesSecondDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f4271c65-68c7-4495-8792-7a2cf2490b8b" absoluteBounds="3, 0.5, 2, 5.2323225911458326">
+      <DataClassMoniker Name="/DataClassesSecondDataContext/Tbl_HouseConclusion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a6b0bb3-a297-473c-94b8-9c279b2d55c3" absoluteBounds="3.0150000000000006, 0.96, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="149027c4-c163-4257-9ab2-842a1436dbda" absoluteBounds="7.625, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DataClassesSecondDataContext/TBL_SetDefaultSetting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1db7f178-f4ab-45cd-883b-7df66d907924" absoluteBounds="7.6400000000000006, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db459b6a-e4ce-4cd6-82a8-89aa0beb1e69" absoluteBounds="0.5, 0.5, 2, 22.924054361979167">
+      <DataClassMoniker Name="/DataClassesSecondDataContext/TBL_SecondHouseFile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d7ac4cd-78a4-4e6b-9789-641de3756d4e" absoluteBounds="0.515, 0.96, 1.9700000000000002, 22.364054361979164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a9b9a65-0f04-4c11-8065-c01f1dbf2e78" absoluteBounds="5.25, 0.5, 2, 7.5399397786458326">
+      <DataClassMoniker Name="/DataClassesSecondDataContext/ListSecondHouse_Vw" />
+      <nestedChildShapes>
+        <elementListCompartment Id="abeb6d58-ab1f-448f-bc5e-d4b546bf6c65" absoluteBounds="5.265, 0.96, 1.9700000000000002, 6.979939778645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b32dfe23-f021-4c6e-b8f0-eec70caaae29" absoluteBounds="7.75, 3, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/DataClassesSecondDataContext/TBL_SendSMS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2cbca4bf-3946-4a5c-b7fa-dcdcf8d75c1c" absoluteBounds="7.765, 3.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

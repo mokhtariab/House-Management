@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="House_Management" Class="DataClassesSecondDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=House_Management;Integrated Security=True" SettingsObjectName="HouseManagement_Prj.Properties.Settings" SettingsPropertyName="House_ManagementConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Tbl_HouseConclusion" Member="Tbl_HouseConclusions">
+    <Type Name="Tbl_HouseConclusion">
+      <Column Name="ConclusionID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HouseId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Hc_LName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hc_LFamily" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hc_LFathername" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hc_LMelicode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hc_CName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hc_CFamily" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hc_CFathername" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hc_CMelicode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hc_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Hc_No" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="HF_FileNo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Hc_Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hc_CostPrice" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Hc_CostRent" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Hc_CostMtg" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Hc_RentMonth" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Hc_CommissionCost" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Hc_DutyCost" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Interception_Code" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="User_Code" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Hc_Description" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_SetDefaultSetting" Member="TBL_SetDefaultSettings">
+    <Type Name="TBL_SetDefaultSetting">
+      <Column Name="SetID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TypeHouse" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="HouseFor" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="RequestFor" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Money_Unit" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Money_Change" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_SecondHouseFile" Member="TBL_SecondHouseFiles">
+    <Type Name="TBL_SecondHouseFile">
+      <Column Name="SndHouseID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Modify_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FileNO" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="FileStatus" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NonActive_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FilePriority" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Lord_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lord_Family" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lord_Address" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Lord_Part" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Lord_PartName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Lord_CityName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Lord_Telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lord_Mobile" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lord_Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HouseFor" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TypeHouse" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="P_Northern" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="P_Southern" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="P_Eastern" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="P_Western" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Few_estate" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Few_estateunit" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Few_unitAll" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Price_HouseMeter" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Price_HouseAll" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Price_Mortgage" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Price_Rent" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Complex" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Few_ComplexBld" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FH_estateNo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FH_UnitNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FH_Submeter" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="FH_BedRoomFew" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FH_RcRoomFew" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FH_BedRoom" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FH_RcRoom" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FH_BldLow" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FH_WallCover" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FH_KitchenModel" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FH_CupbrdType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FH_KitchenFew" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FH_WcFewIr" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FH_WcFewFg" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FH_WcIrani" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_WcForeign" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_SmallKitchen" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_Telephone" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_TelFew" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FH_Balcony" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_BalconyMeter" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="FH_FirePlace" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_FirePlaceFew" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FH_Parking" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_ParkingFew" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FH_StoreRoom" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_StRoomMeter" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="FH_Decoration" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FH_Cellar" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_CellarMeter" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="FH_Yard" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_YardMeter" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="FH_BackYard" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_BackYardMeter" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="FH_AifoonVideo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_RemotingDoor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_AerialCenter" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_Patio" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_PatioMeter" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="FH_Bldface" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FH_EmployeeSrv" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_RubShooting" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Water" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Electricity" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Gaz" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Heat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Cooler" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_FanCoel" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Chiler" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Pakage" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Elevator" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Sauna" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Jacuzzi" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Pool" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_PoolType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CH_ElevatorFew" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="RH_LandArea" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RH_SideWidth" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RH_Arena" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RH_Upscale" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RH_Height" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RH_Pressure" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RH_Corrective" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RH_Walled" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RH_Bldage" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="RH_UseType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RH_LicenceType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RH_DocUse" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RH_DocType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RH_LicenceConfig" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RH_Property" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RH_KeyMoney" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OH_Discharge" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OH_DischargeDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OH_HolderName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OH_HolderTel" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OH_RentUse" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OH_LordExist" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OH_VisitAllow" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OH_Specify" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="OH_MaxPeople" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="OH_MapDictation" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="InformationSource" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="User_Code" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ListSecondHouse_Vw" Member="ListSecondHouse_Vws">
+    <Type Name="ListSecondHouse_Vw">
+      <Column Name="SndHouseID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FileNO" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="FileNOInt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Modify_Date" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="HouseFor" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TypeHouse" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Lord_NF" Type="System.String" DbType="NVarChar(101)" CanBeNull="true" />
+      <Column Name="Lord_Mobile" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lord_Telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CityName_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PartName_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Few_estate" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FH_estateNo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Few_unitAll" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FH_UnitNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FH_Submeter" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Price_HouseAllStr" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Price_HouseAll" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Price_MR" Type="System.String" DbType="VarChar(203)" CanBeNull="true" />
+      <Column Name="Price_Mortgage" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Price_Rent" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FH_BedRoomFew" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NonActive_DateStr" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="FH_Parking" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RH_Bldage" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="RH_UseType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RH_DocUse" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OH_LordExist" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_StoreRoom" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Elevator" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Cooler" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CH_Heat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FH_AifoonVideo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FileStatus" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NonActive_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_SendSMS" Member="TBL_SendSMS">
+    <Type Name="TBL_SendSMS">
+      <Column Name="SMSCode" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Mobile_No" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MessageText" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SMS_Few" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UseName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Archive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SendDate" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SendTime" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.InsDelRecordHouseFile_Sp" Method="InsDelRecordHouseFile_Sp">
+    <Parameter Name="Snd_HouseID" Parameter="snd_HouseID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="InstoHs_InstoSHs" Parameter="instoHs_InstoSHs" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="FileStatus" Parameter="fileStatus" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

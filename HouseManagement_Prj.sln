@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseManagement_Prj", "HouseManagement_Prj\HouseManagement_Prj.csproj", "{43BF19FC-B71E-4FEC-B4F1-58D7FDDDB472}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupHouseMng", "SetupHouseMng\SetupHouseMng.vdproj", "{7EDA69C5-6028-4315-AF51-E65698B0B387}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43BF19FC-B71E-4FEC-B4F1-58D7FDDDB472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43BF19FC-B71E-4FEC-B4F1-58D7FDDDB472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43BF19FC-B71E-4FEC-B4F1-58D7FDDDB472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43BF19FC-B71E-4FEC-B4F1-58D7FDDDB472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EDA69C5-6028-4315-AF51-E65698B0B387}.Debug|Any CPU.ActiveCfg = Debug
+		{7EDA69C5-6028-4315-AF51-E65698B0B387}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

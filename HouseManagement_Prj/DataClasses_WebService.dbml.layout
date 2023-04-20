@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 23.5" name="DataClasses_WebService">
+  <DataContextMoniker Name="/DataClasses_WebServiceDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0e48c80d-5a8f-4ceb-931a-f540fb09a734" absoluteBounds="8.25, 1.25, 2, 5.7229600053032232">
+      <DataClassMoniker Name="/DataClasses_WebServiceDataContext/ListTmpCustomer_Vw" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db7ffb08-d08d-44ab-b2a3-51eaad202ba0" absoluteBounds="8.265, 1.71, 1.9700000000000002, 5.1629600053032236" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5f1e9e1d-5486-44cd-a5c2-e1138f932b62" absoluteBounds="5.875, 0.75, 2, 7.2362756432096154">
+      <DataClassMoniker Name="/DataClasses_WebServiceDataContext/TBL_TmpHouseRequest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5edef31a-31b3-4d7c-8ebd-55d6fda8b2c6" absoluteBounds="5.89, 1.21, 1.9700000000000002, 6.6762756432096158" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d4262745-b63f-4031-8c24-4ea3a3a36312" absoluteBounds="0.75, 1.25, 2, 21.991103112796942">
+      <DataClassMoniker Name="/DataClasses_WebServiceDataContext/TBL_TmpHouseFile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de6193b2-ff46-4699-a3e1-8c4df070cd37" absoluteBounds="0.765, 1.71, 1.9700000000000002, 21.43110311279694" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d366dd97-3470-4143-978f-6db9be337d5a" absoluteBounds="3.25, 1.625, 2, 6.6687822789947182">
+      <DataClassMoniker Name="/DataClasses_WebServiceDataContext/ListTmpHouse_Vw" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e847493-3159-4a2d-87ac-3b42860ec148" absoluteBounds="3.265, 2.085, 1.9700000000000002, 6.1087822789947186" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
